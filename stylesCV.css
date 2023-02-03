@@ -1,0 +1,141 @@
+h1 {
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 15px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+#socialmedia {
+    text-align: center;
+    font-size: 25px;
+
+}
+
+#titulo {
+    background-image: url('fondo.jpeg');
+    text-align: center;
+    color: white;
+}
+
+#fotoUsuario {
+    border-radius: 50%;
+    border: solid;
+    border-width: 5px;
+    border-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#navBar {
+    width: 100%;
+    overflow: hidden;
+}
+
+#navBar a {
+    float: left;
+    display: block;
+    padding: 14px 16 px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    width: 20%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+#navBar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+  
+#navBar .icon {
+    display: none;
+}
+  
+@media screen and (max-width: 600px) {
+    #navBar a:not(:first-child) {display: none;}
+    #navBar a.icon {
+      float: right;
+      display: block;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+  #navBar.responsive {position: relative;}
+  #navBar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  #navBar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+#navBar a:hover {
+    background-color: rgb(6, 6, 50);
+}
+
+.navBarEle {
+    color: white;
+}
+
+#frase {
+    padding: 10px;
+    margin-top: 0;
+    border-top: 0ch;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap');
+body{ margin: 0; font-family: 'Roboto Condensed', sans-serif; }
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  padding-left: 50px;
+}
+
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width:900px){
+  .container{
+  grid-template-columns: 3fr 1fr;
+  }
+}
+
+.boton {
+  background-color: rgb(11, 11, 69);
+  color: whitesmoke;
+  border-radius: 25%;
+}
+
+.boton:hover {
+  cursor: pointer;
+  background: #1e1d25;
+}
+
+.container {
+  border: solid;
+  border-radius: 5%;
+  margin: 20px
+}

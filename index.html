@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Proyecto Final</title>
+    <link rel="stylesheet" href="stylesCV.css">
+    <script src="https://kit.fontawesome.com/7a629be0a7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="titulo">
+        <div id="navBar">
+            <a class="navBarEle" href="#acerca">ACERCA DE MI</a>
+            <a class="navBarEle" href="#infoPer">INFORMACION PERSONAL</a>
+            <a class="navBarEle" href="#expLab">EXPERIENCIA LABORAL</a>
+            <a class="navBarEle" href="#habilidades">HABILIDADES</a>
+            <a class="navBarEle" href="#aficiones">AFICIONES</a>
+            <a href="javascript:void(0);" class="icon" onclick="varchange()">
+                <i class="fa fa-bars"></i>
+              </a> 
+        </div>
+    
+        <img src="" alt="Foto de Perfil" id="fotoUsuario">
+        <h1><span id="nombre"></span></h1>
+        <p id="frase">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+    </div>    
+    
+    <div id="socialmedia">
+        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.github.com"><i class="fa-brands fa-github"></i></a>
+    </div>
+
+    <div class="container">
+        <div class="column">
+            <a name="acerca" />
+            <h2><i class="fa-regular fa-star"></i> Acerca de mi: 
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius mauris at mauris vulputate eleifend. In ut quam blandit, 
+                    posuere est eget, consequat erat. In id condimentum erat. Cras vitae pharetra libero. Vestibulum imperdiet ex at tortor pretium, 
+                    ac rhoncus sem imperdiet. Pellentesque varius ultrices consectetur. In semper odio quis metus pellentesque suscipit. Suspendisse 
+                    sagittis blandit ipsum. Aliquam porttitor, metus sed fermentum luctus, nulla turpis egestas felis.</p>
+                <p id="masinfo" style= "display: none;">Aliquam malesuada iaculis lacinia. Cras risus nulla, 
+                    euismod porta hendrerit sed, luctus quis tellus. Vivamus 
+                    tempus vel dui placerat commodo. Proin placerat eget tellus 
+                    aliquam bibendum. Praesent dignissim auctor tellus sit amet tempor. 
+                    Ut congue neque et fringilla facilisis. Suspendisse fringilla 
+                    turpis nec elit ultrices pellentesque. Pellentesque lorem turpis, 
+                    vehicula at arcu vitae, dignissim tincidunt ex. In in ipsum diam. 
+                    Aliquam volutpat accumsan odio, vel dignissim turpis interdum eget. 
+                    Integer in cursus tellus, a semper quam. Orci varius natoque penatibus 
+                    et magnis dis parturient montes, nascetur ridiculus mus. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </h2>
+            <button type="button" class="boton" id="acercademi">Ver más</button>
+        </div>
+        <div class="column">
+            <a name="infoPer" />
+            <h2><i class="fa-regular fa-user"></i>   Informacion personal:
+            <ul>
+                <p><i class="fa-solid fa-cake-candles"></i> <span id="edad"></span></p>
+                <p><i class="fa-regular fa-envelope"></i> <span id="email"></span></p>
+                <p><i class="fa-solid fa-phone"></i> <span id="telf"></span></p>
+                <p><i class="fa-solid fa-location-dot"></i> <span id="direccion"></span></p>
+            </ul>
+            </h2>
+        </div>
+        
+    </div>
+
+    <div class="container">
+        <div class="column">
+            <a name="expLab" />
+            <h2><i class="fa-solid fa-code-fork"></i>  Experiencia Laboral:
+                <ul>
+                    <h3><i class="fa-regular fa-handshake"></i> Lorem ipsum dolor sit amet, Pronto-Cola
+                        <p>02/2018 - 05/2019</p>
+                        <ul>
+                            <p><i class="fa-solid fa-exclamation"></i> Convertir PSD a HTML</p>
+                            <p><i class="fa-solid fa-exclamation"></i> Apoyo en Bootstrap</p>
+                            <p><i class="fa-solid fa-exclamation"></i> Interaccion con el cliente</p>
+                        </ul>
+                    </h3>
+                    <h3><i class="fa-regular fa-handshake"></i> Sed varius mauris at mauris vulputate eleifend, Tech3000
+                        <p>07/2019 - 05/2022</p>
+                        <ul>
+                            <p><i class="fa-solid fa-exclamation"></i> De-bugging websites</p>
+                            <p><i class="fa-solid fa-exclamation"></i> Interaccion con el cliente</p>
+                            <p><i class="fa-solid fa-exclamation"></i> Hacer que el sitio web sea responsivo</p>
+                        </ul>
+                </ul>
+            </h2>
+        </div>
+
+        <div class="column">
+            <a name="habilidades" />
+            <h2><i class="fa-solid fa-person-digging"></i>  Habilidades
+                <ul>
+                    <p><i class="fa-solid fa-check"></i> HTML</p>
+                    <p><i class="fa-solid fa-check"></i> Bootstrap</p>
+                    <p><i class="fa-solid fa-check"></i> CSS</p>
+                    <p><i class="fa-solid fa-check"></i> JavaScript</p>
+                </ul>
+            </h2>
+        
+            <h2><i class="fa-solid fa-gamepad"></i>  Aficiones <button type="button" class="boton" id="aficiones">Ver aficiones</button>
+    
+            </h2>
+            <div id="hobby" style="display: none;">
+                <ol>
+                    <p id="afi1"></p>
+                    <p id="afi2"></p>
+                    <p id="afi3"></p>
+                </ol> 
+            </div>
+        </div>
+    </div>
+
+    <script src="cv.js"></script>
+</body>
+</html>
